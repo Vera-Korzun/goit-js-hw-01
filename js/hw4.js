@@ -11,7 +11,7 @@ let balanceCredit=credits-totalPrice; // Write code on this line
 let message;
 
 // Write code under this line
-if (orderPieces==null || orderPieces === '') {
+if (orderPieces===null || orderPieces === ' ') {
     message = CANCELED_BY_USER;
 } else if (totalPrice <= credits) {
     message = (`Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов`);

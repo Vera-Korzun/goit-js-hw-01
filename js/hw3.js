@@ -12,7 +12,7 @@ let message;
 // Write code under this line
 if (userPassword === ADMIN_PASSWORD) {
     message = ACCESS_IS_ALLOWED;
-} else if (userPassword === null) {
+} else if (!userPassword/* === null*/) {
     message = CANCELED_BY_USER;
 } else if (userPassword !== ADMIN_PASSWORD) {
     message = ACCESS_DENIED;
