@@ -1,6 +1,4 @@
-//----------------------------Задача 3
-//const userPassword = 'jqueryismyjam';
-const userPassword = prompt("Enter password");
+const userPassword = 'jqueryismyjam';
 
 const ADMIN_PASSWORD = 'jqueryismyjam';
 
@@ -17,7 +15,6 @@ if (userPassword === ADMIN_PASSWORD) {
 } else if (userPassword !== ADMIN_PASSWORD) {
     message = ACCESS_DENIED;
 };
-
 
 
 console.log(message);
